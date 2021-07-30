@@ -1,0 +1,55 @@
+@import "../../styles/_variables.scss";
+@import '../../styles/_styles.scss';
+
+.header {
+   display: grid;
+   grid-template-columns:repeat(8,1fr) ;
+  // width: 100%;
+    height: 5rem;
+    // margin-bottom: 2em;
+    // position: absolute;
+   
+    // padding: 0 10%;
+  }
+  .headerContent{
+    grid-column: 2/8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color:$secondary__text;
+    align-items: center;
+  }
+  
+  .header li {
+    margin: 0 1rem;
+  }
+  
+  .header a {
+    text-decoration: none;
+    /* color: white; */
+    font-size: 1.25rem;
+  }
+  
+  .header a:hover,
+  .header a:active {
+    color: $primary__text;
+    border-bottom: 2px solid $primary__text;
+  }
+  
+  .cartCircle{
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: $button__color__secondary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

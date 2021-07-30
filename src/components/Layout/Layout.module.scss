@@ -1,0 +1,40 @@
+@import "../../styles/_variables.scss";
+@import '../../styles/_styles.scss';
+
+.section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+     justify-content:space-evenly;
+
+    
+    
+}
+
+// .card{
+//     // background-color: turquoise;
+//     border:1px solid $button__color__primary;
+//     border-radius: 1em;
+//     width: 13em;
+//     // height: 15em;
+//     display: flex;
+//     flex-direction: column;
+//     // justify-content: center;
+//     align-items: center;
+//     padding:1em;
+// }
+// img{
+//    object-fit: cover;
+//    width: 11em;
+//    height: 10em;
+// }
+// .cardInfo{
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     margin: .4em 0;
+//     width: 100%;
+// }
+// button{
+//     width: 100%;
+// }

@@ -1,0 +1,31 @@
+@import "../../styles/_variables.scss";
+
+main{
+  
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+
+    // font-family: Roboto;
+}
+// .home {
+//     // position: relative;
+//     min-height: 100vh;
+//     width: 100%;
+//     // background-color: violet;
+//     // overflow: hidden;
+//   }
+//   .homeOverflow {
+//     overflow: hidden;
+//   }
+//   .homeDarken::after{
+//     content: " ";
+//     background: rgba(0, 0, 0, 0.6);
+//     // background: white;
+//     position: absolute;
+//     display: block;
+//     height: 100vh;
+//     width: 100%;
+//     // overflow: hidden;
+//   }

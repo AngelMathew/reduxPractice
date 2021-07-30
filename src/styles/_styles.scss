@@ -1,0 +1,141 @@
+@import "./_mixins.scss";
+@import "./_variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: normal;
+  src:url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+}
+
+html {
+  font-family: "Raleway";
+  font-size: $max_font;
+  color: $secondary__text;
+  box-sizing: border-box;
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+  // overflow-x: hidden;
+  // overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "Raleway";
+  // overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: $background__color;
+  // font-size: calc(0.75em + 1vmin);
+}
+div {
+  font-family: "Raleway";
+}
+#___gatsby {
+  overflow-x: hidden;
+}
+h1 {
+  font-family: "Raleway";
+  color: $primary__text;
+//   font-size: 3rem;
+  
+}
+h2 {
+  color: $primary__text;
+//   font-size: 2.5rem;
+  margin: 0.5em 0;
+}
+
+h4 {
+  color: $primary__text;
+  margin-bottom: .5em;
+//   font-size: 1.5rem;
+}
+h5 {
+  color: $primary__text;
+//   font-size: 1.5rem;
+}
+h3 {
+  color:$primary__text;
+  margin: 0.5em 0 1em 0;
+//   font-size: 1.5rem;
+}
+h6 {
+  font-size: $min-font;
+}
+p {
+  color: $primary__text;
+//   font-size: 1.25rem;
+  letter-spacing: 0px;
+  line-height: 136%;
+  font-family: "Raleway";
+}
+
+span {
+  font-size: 1.1rem;
+  color: $secondary__text;
+  display: block;
+}
+label {
+  font-size: $min-font;
+  color: $secondary__text;
+}
+
+li {
+  color: $secondary__text;
+}
+
+main {
+  // overflow-x: hidden !important;
+  position: relative;
+  display: grid;
+  margin-top: 2em;
+  grid-template-columns: repeat(8,1fr);
+ 
+}
+section{
+    grid-column: 2/8;
+}
+button {
+  font-family: "Raleway";
+  cursor: pointer;
+  border: 1px solid transparent;
+padding: .5em;
+border-radius: 4px;
+font-size: 1em;
+margin:0 .5em;
+}
+.primaryButton{
+    background-color: transparent;
+    border: 1px solid $button__color__primary;
+    color:$button__color__primary;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.secondaryButton{
+    background-color: $button__color__secondary;
+    color:$button__color__primary;
+}
+.secondaryButton:hover{
+    background-color:$button__color__primary ;
+    color:white;
+}
+
+a {
+  text-decoration: none;
+  color: $secondary__text;
+  cursor: pointer;
+}
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  // overflow-x: hidden;
+  &:before {
+    box-sizing: inherit;
+  }
+  &:after {
+    box-sizing: inherit;
+  }
+}
